@@ -1,5 +1,7 @@
 # MY PARADE PLANNER 🌦️
 
+## 🚀 [Voir le projet en direct (Live Demo)](https://leafy-lollipop-b69d65.netlify.app)
+
 > 🥉 **Projet Gagnant (3ème Place)** lors du **NASA Space Apps Challenge 2025** à Essaouira.
 > 
 > Développé par l'équipe **APEX** pour répondre au challenge : "[Will It Rain On My Parade?](https://www.spaceappschallenge.org/2025/challenges/will-it-rain-on-my-parade/)"
