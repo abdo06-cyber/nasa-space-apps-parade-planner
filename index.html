@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY PARADE PLANNER — Weather Forecast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="globe-canvas"></canvas>
+
+  <header class="site-header">
+    <div class="header-backdrop"></div>
+    <div class="header-content">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="MY PARADE PLANNER Logo" class="logo-image">
+        <span>MY PARADE PLANNER</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header-cta">Login or Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Partie HERO -->
+  <section class="hero-content">
+    <h1>Weather Forecast</h1>
+    <p>Get accurate and reliable weather forecasts to plan your day with confidence</p>
+    <button class="hero-cta">Let's Go</button>
+  </section>
+
+  <!-- Partie FORMULAIRE MODIFIÉ -->
+  <section id="form-section" class="form-section">
+    <div class="form-container">
+      <h2>Enter Your Details for Weather Forecast</h2>
+      <form id="weather-form">
+        <label for="city">City Name:</label>
+        <input type="text" id="city" name="city" placeholder="Ex: Essaouira, Paris, New York" required>
+        
+        <label for="date">Date (YYYY-MM-DD):</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" name="activity" placeholder="e.g. Walking, Soccer" required>
+        
+        <button type="submit" class="form-submit">Get Forecast</button>
+      </form>
+      <div id="loading-message" class="loading-message" style="display: none;">
+        <p>🔍 Searching for your city...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partie RÉSULTATS CENTRÉE -->
+  <section id="results-section" class="results-section">
+    <div class="results-container">
+      <div class="results-content">
+        <h2>Weather Forecast Results</h2>
+        <div id="result-content" class="forecast-card"></div>
+        <button class="back-btn" onclick="goBackToForm()">Back to Form</button>
+      </div>
+    </div>
+  </section>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
