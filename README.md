@@ -33,3 +33,5 @@ Cette application web permet aux utilisateurs de planifier des événements en e
 * **Anass Et-Talib**
 * **Nor-eddin Abahous**
 * **Iman Nadir**
+* **Ayoub Sami**
+* 
